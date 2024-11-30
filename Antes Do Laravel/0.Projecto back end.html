@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DonLauStand</title>
+        <style>
+            table {
+                width: 100%; /* Full width */
+                border-collapse: collapse; /* Merge borders */
+                margin: 20px 0; /* Space above and below the table */
+            }
+            th, td {
+                border: 1px solid #ddd; /* Light border for cells */
+                padding: 12px; /* Padding inside cells */
+                text-align: left; /* Align text to the left */
+            }
+            th {
+                background-color: #4CAF50; /* Green background for headers */
+                color: white; /* White text for headers */
+            }
+            tr:nth-child(even) {
+                background-color: #f2f2f2; /* Zebra striping for even rows */
+            }
+            tr:hover {
+                background-color: #ddd; /* Highlight row on hover */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="section1">
+            <h1>DonLauStand</h1>
+            <p>"Driven to Match You with the Perfect Ride!"</p>
+            <button type="button"><h2>Need a ride?</h2></button>
+        </div>
+        <div class="section2">
+            <h2>"Your Wish Is My Command"</h2>
+            <button type="button"><h2>Buy</h2></button>
+            <button type="button"><h2>Sell</h2></button>
+        </div>
+        <div class="section3">
+            <h2>Choose Your Brand New Car</h2>
+            <table>
+                <tr>
+                    <th>Car Model</th>
+                    <th>Manufacturer</th>
+                    <th>Year</th>
+                    <th>Price ($)</th>
+                    <th>Availability</th>
+                </tr>
+                <tr>
+                    <td>Model S</td>
+                    <td>Tesla</td>
+                    <td>2022</td>
+                    <td>99,990</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr>
+                    <td>Civic</td>
+                    <td>Honda</td>
+                    <td>2021</td>
+                    <td>24,970</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr>
+                    <td>Mustang</td>
+                    <td>Ford</td>
+                    <td>2022</td>
+                    <td>43,995</td>
+                    <td>Out of Stock</td>
+                </tr>
+                <tr>
+                    <td>Camry</td>
+                    <td>Toyota</td>
+                    <td>2023</td>
+                    <td>27,000</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr>
+                    <td>Accord</td>
+                    <td>Honda</td>
+                    <td>2022</td>
+                    <td>26,120</td>
+                    <td>In Stock</td>
+                </tr>
+            </table>
+        
+        </div>
+        <div class="section4">
+            <h2>Tell Me About Your Car</h2>
+            <form action="post">
+                <div>
+                    <label>
+                        Onwer
+                        <input type="text" name="full_name">
+                    </label>
+                </div>
+                
+                <div>
+                    <label>
+                        Nationality
+                        <select name="country">
+                            <option>Portugal</option>
+                            <option>Germany</option>
+                            <option>Angola</option>
+                            <option>Brazil</option>
+                            <option>Spain</option>
+                            <option>Argentina</option>
+                            <option>South Africa</option>
+                            <option>Israel</option>
+                            <option>Australia</option>
+                            <option>Spain</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Car Brand
+                        <input type="text" name="Car_brand">
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Model
+                        <input type="text" name="model">
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Year
+                        <input type="text" name="year">
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Segment
+                        <select name="segment">
+                            <option>Cabrio</option>
+                            <option>Van</option>
+                            <option>Coupe</option>
+                            <option>Sedan</option>
+                            <option>SUV</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Kilometers
+                        <input type="text" name="Kilometers">
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        Fuel
+                        <select name="fuel">
+                            <option>Diesel</option>
+                            <option>Electric</option>
+                            <option>Gasoline</option>
+                            <option>Hybrid</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div>
+                    Maintenance
+                    <label>
+                        <input type="radio" name="car_maintenance" value="1">
+                        Regular
+                    </label>
+                    <label>
+                        <input type="radio" name="car_maintenance" value="2">
+                        Not Regular
+                    </label>
+                </div>
+
+                <div>
+                    Accidents
+                    <label>
+                        <input type="radio" name="car_accident" value="1">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="car_accident" value="2">
+                        No
+                    </label>
+                </div>
+
+                <div>
+                    Damage
+                    <label>
+                        <input type="radio" name="car_accident" value="1">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="car_accident" value="2">
+                        No
+                    </label>
+                </div>
+                
+            </form>
+        </div>
+        <div class="section5">
+            <h2>Exemple for each vehicle</h2>
+            <table>
+                <h3>Tesla Details</h3>
+                <caption>Information</caption>
+                <tr>
+                    <th>Year</th>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <th>Model</th>
+                    <td>Model 3</td>
+                </tr>
+                <tr>
+                    <th>Version</th>
+                    <td>Long Range AWD Dual Motor Performance</td>
+                </tr>
+                <tr>
+                    <th>Doors</th>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th>Capacity</th>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>Color</th>
+                    <td>Red</td>
+                </tr>
+                <tr>
+                    <th>VIN</th>
+                    <td>LRW3E7EL8NC488238</td>
+                </tr>    
+            </table>
+
+            <table>
+                <caption>Technical Specifications</caption>
+                <tr>
+                    <th>Traction</th>
+                    <td>Integral</td>
+                </tr>
+                <tr>
+                    <th>Power</th>
+                    <td>534 cv</td>
+                </tr>
+                <tr>
+                    <th>GearBox</th>
+                    <td>Automatic</td>
+                </tr>
+                <tr>
+                    <th>Number of Changes</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Fuel</th>
+                    <td>Electric</td>
+                </tr>
+                <tr>
+                    <th>Maximum Autonomy</th>
+                    <td>567 km</td>
+                </tr>
+                <tr>
+                    <th>Consumption</th>
+                    <td>16 kWh/100km</td>
+                </tr>    
+                <tr>
+                    <th>Battery capacity</th>
+                    <td>82 kWh</td>
+                </tr>    
+                <tr>
+                    <th>Battery</th>
+                    <td>Own</td>
+                </tr>    
+                <tr>
+                    <th>Charging time</th>
+                    <td>6 Hours</td>
+                </tr>    
+                <tr>
+                    <th>Segment</th>
+                    <td>Sedan</td>
+                </tr>    
+                <tr>
+                    <th>Vehicle Class</th>
+                    <td>Class 1</td>
+                </tr> 
+            </table>
+
+            <table>
+                <caption>State & History</caption>
+                <tr>
+                    <th>Condition</th>
+                    <td>Used</td>
+                </tr>
+                <tr>
+                    <th>Miles</th>
+                    <td>
+                        20,566 km</td>
+                </tr>
+                <tr>
+                    <th>Origin</th>
+                    <td>Imported</td>
+                </tr>
+                <tr>
+                    <th>Registration Month</th>
+                    <td>February</td>
+                </tr>
+                <tr>
+                    <th>Year</th>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <th>Registration(s)</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Factory Warranty up to</th>
+                    <td>2030-02-25</td>
+                </tr>    
+                <tr>
+                    <th>Inspection valid until</th>
+                    <td>2026-02-25</td>
+                </tr>    
+                <tr>
+                    <th>Complete Revision Book</th>
+                    <td>Yes</td>
+                </tr>    
+                <tr>
+                    <th>Accident</th>
+                    <td>No</td>
+                </tr>    
+                <tr>
+                    <th>Damages</th>
+                    <td>No</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
